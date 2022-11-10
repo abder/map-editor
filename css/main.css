@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+#app { 
+    display: flex;
+    justify-content: center;
+}
+
+
+.settings {
+    text-align: center;
+    padding: 25px;
+}
+
+.options {
+    width: 50px;
+}
+
+.options img {
+    cursor: pointer;
+}
+
+.land {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    border: 1px solid #E0E0E0;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+    position: relative;
+}
+
+.light-tile {
+    background-color: #fff;
+    box-shadow: 0 0px 20px #000;
+}
+
+.image-top-layer {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+.size-form {
+    padding: 20px;
+}
+
+.size-form input {
+    width: 100px;
+}

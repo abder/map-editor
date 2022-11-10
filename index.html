@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Editor</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="settings">
+      <button id="export">Export</button>
+      <input type="file" accept="application/JSON" id="import" name="import" />
+      <form id="size-form" class="size-form">
+        <input
+          min="5"
+          required
+          max="20"
+          id="width"
+          placeholder="width"
+          type="number"
+        />
+        <input
+          required
+          min="5"
+          max="20"
+          id="height"
+          placeholder="height"
+          type="number"
+        />
+        <button type="submit">Change Land Size</button>
+      </form>
+    </div>
+    <div id="app">
+      <div id="land" class="land"></div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/classes/Event.js"></script>
+    <script src="js/classes/Map.js"></script>
+    <script src="js/classes/View.js"></script>
+    <script src="js/classes/Controller.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+Hello and welcome! 
+With this test we are not asking you to create anything specifically related to GameDev, but rather we would like to see if you can handle basic native JavaScript interactions.
+
+
+
+TASK OVERVIEW: 
+
+We are providing you with a set of images. You will just have to construct a "mini map editor", which will place the images on the left (i.e. Grass, Sand, Barrel, Tree) onto the map on the right when you click on them.
+
+
+
+
+TASK CONDITIONS:
+
+There are only 2 layers possible:
+Layer 1: Grass, Sand
+Layer 2: Tree, Barrel 
+
+User should be able to put Grass for example as a base and a Tree on top of that (2 layers).
+
+Layer 2 cannot be added without Layer 1.
+Layer 1 cannot be stacked on top of Layer 2. 
+(You can put Sand then Barrel on top for example, but not Barrel and then Sand on it).
+
+
+
+STANDARDS:
+
+- Export the map to a file and then import it.
+
+- By entering two numbers, the user can specify the width and height of their map.
+If the new height or width is greater than the previous, new tiles are added to the map's right or bottom.
+If the new height or width is less than the previous value, the tiles on the right and bottom disappear.
+
+- When the user clicks on a tile, the border of the tile lights up and allows selection of ground (layer 1: Grass or Sand) and object (layer 2: Barrel and Tree). 
+Only one can be selected per layer. When the user selects another one, the new selection replaces the old selection. 
+
+- User can click Export to download the map they created as a JSON file. User can also click Import and select their JSON file of a previously created map.
+
+
+
+
+
+The interface doesn't have to be pretty. The JS code must be clean, you can't use any frameworks, it must be native Javascript. 
+
+
+The interface can be very simple, on the LEFT, you can have the items to select, and on the RIGHT - the tiles. 
+User can select an item on the left (grass, sand, barrel, tree...) and place it on the map on the right.
+
+
+Again, this is not a Game Development, it's just clicking on images (left side) and make them appear on the right side.
+
+Feel free to ask questions, we wish you good luck! :)
